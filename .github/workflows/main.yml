@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  ci:
+    name: Deploy to supabase
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: supabase/setup-cli@v1
+    - run: supabse deploy functions
