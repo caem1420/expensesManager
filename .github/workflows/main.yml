@@ -39,11 +39,11 @@ jobs:
             LOCAL_PROJECT: false,
             LOCAL_CONNECTION_SQL_ULR:
               '$LOCAL_CONNECTION_SQL_ULR',
-            SQL_HOST: 'aws-0-us-west-1.pooler.supabase.com',
-            SQL_USER: 'postgres.wykeiyxxemprnqkxcvqo',
-            SQL_PORT: '6543',
-            SQL_PASSWORD: '@!xdsf5r7pQGU.G',
-            SQL_DATABASE: 'postgres',
+            SQL_HOST: '$SQL_HOST',
+            SQL_USER: '$SQL_USER',
+            SQL_PORT: '$SQL_PORT',
+            SQL_PASSWORD: '$SQL_PASSWORD',
+            SQL_DATABASE: '$SQL_DATABASE',
           };
           " >> ./supabase/functions/expensesManager/tools/enviroment.ts
       - name: "cat file"
