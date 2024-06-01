@@ -8,6 +8,7 @@ on:
 
 env:
   SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+  PROJECT_ID: ${{ secrets.SUPABASE_PROJECT_ID }}
 jobs:
   ci:
     name: Deploy to supabase
@@ -15,4 +16,5 @@ jobs:
 
     steps:
     - uses: supabase/setup-cli@v1
+    - run: supabase link --project-ref $PROJECT_ID
     - run: supabase functions deploy
