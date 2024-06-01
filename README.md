@@ -30,16 +30,16 @@ This project is built with Deno, TypeScript, and Supabase. It includes a set of 
 
 3. Configure environment variables:
 
-    Create a `.env` file in the root directory and add your Supabase project URL and API key:
+    Create a `enviroment.ts` file in the directory `functions/expensesManager/tools` and add your Supabase project URL and API key:
 
     ```sh
-    LOCAL_PROJECT=
-    LOCAL_CONNECTION_SQL_ULR=
-    SQL_HOST=
-    SQL_USER=
-    SQL_PORT=
-    SQL_PASSWORD=
-    SQL_DATABASE=
+    LOCAL_PROJECT
+    LOCAL_CONNECTION_SQL_ULR
+    SQL_HOST
+    SQL_USER
+    SQL_PORT
+    SQL_PASSWORD
+    SQL_DATABASE
     ```
 
 ## Running the Project
@@ -47,7 +47,7 @@ This project is built with Deno, TypeScript, and Supabase. It includes a set of 
 To run the function, use the following command:
 
 ```sh
-deno run --import-map ./supabase/functions/import_map.json --allow-all -./supabase/functions/expensesManager/index.ts
+deno run --import-map ./supabase/functions/import_map.json --allow-all ./supabase/functions/expensesManager/index.ts
 ```
 or
 

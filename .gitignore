@@ -6,3 +6,4 @@ deno.lock
 **/.branches
 **/.temp
 **/pwd.json
+supabase/functions/expensesManager/tools/enviroment.ts

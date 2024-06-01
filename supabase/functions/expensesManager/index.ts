@@ -6,10 +6,7 @@
 import express from "express";
 import { ExpensesContoller } from "./controllers/expenses.controller.ts";
 import { logger } from "./tools/logger.ts";
-import { loadSync } from "dotenv";
 import { validateExpense } from "./validations/validateExpense.ts";
-loadSync({ export: true });
-console.log(Deno.env.toObject());
 const app = express();
 app.use(express.json());
 app.use(logger);

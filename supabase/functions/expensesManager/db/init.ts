@@ -1,13 +1,11 @@
 import postgres from "postgres";
 import { drizzle } from "drizzle-orm/postgres-js";
-import { loadSync } from "dotenv";
-const envData = loadSync({ envPath: "../.env", allowEmptyValues: true });
+import { enviroment } from "../tools/enviroment.ts";
 export default class db {
   public db;
   constructor() {
-    let connectionString = `postgres://postgres.wykeiyxxemprnqkxcvqo:@!xdsf5r7pQGU.G@aws-0-us-west-1.pooler.supabase.com:6543/postgres`;
-    // let connectionString = `postgres://${envData.SQL_USER}:${envData.SQL_PASSWORD}@${envData.SQL_PORT}:${envData.SQL_PORT}/${envData.SQL_DATABASE}`;
-    if (envData.LOCAL_PROJECT === "true") {
+    let connectionString = `postgres://${enviroment.SQL_USER}:${enviroment.SQL_PASSWORD}@${enviroment.SQL_HOST}:${enviroment.SQL_PORT}/${enviroment.SQL_DATABASE}`;
+    if (enviroment.LOCAL_PROJECT) {
       connectionString =
         "postgresql://postgres:postgres@127.0.0.1:54322/postgres";
     }
