@@ -1,10 +1,10 @@
-# Supabase Project
+# Expenses Manager Project
 
 This project is built with Deno, TypeScript, and Supabase. It includes a set of serverless functions to interact with a Supabase backend.
 
 ## Table of Contents
 
-- [Supabase Project](#supabase-project)
+- [Expenses Manager Project](#expenses-manager-project)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -48,8 +48,9 @@ To run the function, use the following command:
 
 ```sh
 deno run --import-map ./supabase/functions/import_map.json --allow-all -./supabase/functions/expensesManager/index.ts
-
+```
 or
 
 ```sh
 supabase functions serve expensesManager
+```
