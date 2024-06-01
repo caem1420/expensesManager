@@ -13,4 +13,4 @@ jobs:
 
     steps:
     - uses: supabase/setup-cli@v1
-    - run: supabase deploy functions
+    - run: supabase functions deploy
