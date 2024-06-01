@@ -16,5 +16,6 @@ jobs:
 
     steps:
     - uses: supabase/setup-cli@v1
+    - run: supabase init
     - run: supabase link --project-ref $PROJECT_ID
     - run: supabase functions deploy
