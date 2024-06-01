@@ -1,0 +1,22 @@
+{
+  "name": "my-expenses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "drizzle-kit generate:pg"
+  },
+  "author": "thorwebdev",
+  "license": "ISC",
+  "dependencies": {
+    "drizzle-orm": "^0.29.1",
+    "express": "4.19.2",
+    "express-validator": "^7.1.0",
+    "postgres": "^3.4.3",
+    "winston": "3.13.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.6"
+  }
+}

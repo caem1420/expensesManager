@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "drizzle-orm": "npm:drizzle-orm@0.29.1",
+    "drizzle-orm/": "npm:/drizzle-orm@0.29.1/",
+    "postgres": "npm:postgres@3.4.3",
+    "express": "npm:express@4.19.2",
+    "@types/express": "npm:@types/express@4.17.21",
+    "@types/winston": "npm:@types/express@2.4.4",
+    "dotenv": "https://deno.land/std@0.222.1/dotenv/mod.ts",
+    "express-validator": "npm:express-validator@7.1.0"
+  }
+}
