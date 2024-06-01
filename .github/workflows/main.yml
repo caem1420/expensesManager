@@ -38,7 +38,7 @@ jobs:
           echo "export const enviroment = {
             LOCAL_PROJECT: false,
             LOCAL_CONNECTION_SQL_ULR:
-              'postgresql://postgres:postgres@127.0.0.1:54322/postgres',
+              '$LOCAL_CONNECTION_SQL_ULR',
             SQL_HOST: 'aws-0-us-west-1.pooler.supabase.com',
             SQL_USER: 'postgres.wykeiyxxemprnqkxcvqo',
             SQL_PORT: '6543',
