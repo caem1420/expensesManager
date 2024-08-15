@@ -20,7 +20,7 @@ export class TypeExpenses {
     return { status: true };
   }
 
-  async getTypeExpensesById(id: number): Promise<object> {
+  async getTypeExpensesById(id: number): Promise<any> {
     const allTypeExpenses = await this.db.select().from(typeExpenses).where(eq(typeExpenses.id, id));
     return { status: true, data: allTypeExpenses };
   }

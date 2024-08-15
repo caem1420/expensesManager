@@ -7,3 +7,5 @@ deno.lock
 **/.temp
 **/pwd.json
 supabase/functions/expensesManager/tools/enviroment.ts
+**/.DS_Store
+.DS_Store

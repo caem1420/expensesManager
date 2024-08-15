@@ -22,14 +22,6 @@ jobs:
   ci:
     name: Deploy to supabase
     runs-on: ubuntu-22.04
-
-    # steps:
-    # - uses: actions/checkout@v4
-    # - uses: supabase/setup-cli@v1
-    # - run: ls
-    # - run: supabase link --project-ref $PROJECT_ID
-    # - run: supabase functions deploy
-
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -46,8 +38,6 @@ jobs:
             SQL_DATABASE: '$SQL_DATABASE',
           };
           " >> ./supabase/functions/expensesManager/tools/enviroment.ts
-      - name: "cat file"
-        run: cat ./supabase/functions/expensesManager/tools/enviroment.ts
       - name: Install  supabase
         uses: supabase/setup-cli@v1
       - name: Link supabase project
